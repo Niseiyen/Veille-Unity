@@ -9,6 +9,7 @@ public class KillZoneBehaviour : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            print("player is dead");
             Destroy(collision.gameObject);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }

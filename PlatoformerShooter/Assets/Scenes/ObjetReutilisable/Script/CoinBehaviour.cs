@@ -8,6 +8,7 @@ public class CoinBehaviour : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            print("+1 Coin");
             Destroy(gameObject);
         }
     }
